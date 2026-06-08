@@ -437,6 +437,96 @@ footer a {
 
 /*
 ==========
+FLUXOGRAMA
+==========
+*/
+
+.flowchart-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+
+.flowchart {
+  display: block;
+  width: 100%;
+  min-width: 620px;
+  height: auto;
+}
+
+.flow-box,
+.flow-decision {
+  fill: #ffffff;
+  stroke: #4b7563;
+  stroke-width: 3;
+}
+
+.flow-box.success {
+  fill: #edf8f0;
+}
+
+.flow-box.danger-box {
+  fill: #fdecec;
+  stroke: #c93d3d;
+}
+
+.flow-line {
+  stroke: #4b7563;
+  stroke-width: 4;
+  stroke-linecap: round;
+  marker-end: url(#arrow);
+}
+
+.danger-line {
+  stroke: #c93d3d;
+}
+
+.flow-number {
+  font-size: 24px;
+  font-weight: bold;
+  fill: #ffffff;
+}
+
+.flow-title {
+  font-size: 24px;
+  font-weight: bold;
+  fill: #243034;
+}
+
+.flow-text {
+  font-size: 17px;
+  fill: #44545a;
+}
+
+.flow-label {
+  font-size: 18px;
+  font-weight: bold;
+  fill: #4b7563;
+}
+
+.danger-label {
+  fill: #c93d3d;
+}
+
+.center {
+  text-anchor: middle;
+}
+
+@media (max-width: 760px) {
+  .flowchart-wrapper {
+    padding: 12px;
+  }
+
+  .flowchart {
+    min-width: 560px;
+  }
+}
+
+/*
+==========
 QUEM SOMOS
 ==========
 */

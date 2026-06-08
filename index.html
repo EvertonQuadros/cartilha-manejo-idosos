@@ -272,48 +272,70 @@
     siga esta sequência de ações:
   </p>
 
-  <div class="steps">
-    <div>
-      <strong>1</strong>
-      <span>
-        Observe o comportamento e identifique possíveis sinais de risco.
-      </span>
-    </div>
+  <div class="flowchart-wrapper" aria-label="Fluxograma de ação do cuidador">
+    <svg class="flowchart" viewBox="0 0 900 760" role="img" aria-labelledby="flowTitle flowDesc">
+      <title id="flowTitle">Fluxograma de ação do cuidador</title>
+      <desc id="flowDesc">
+        Observe o comportamento, faça abordagem verbal, avalie a resposta,
+        mantenha ambiente seguro se houver melhora ou acione apoio se não houver melhora.
+      </desc>
 
-    <div>
-      <strong>2</strong>
-      <span>
-        Utilize abordagem verbal calma, linguagem simples e escuta ativa.
-      </span>
-    </div>
+      <defs>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+          <path d="M2,2 L10,6 L2,10 Z" fill="#4b7563"></path>
+        </marker>
+      </defs>
 
-    <div>
-      <strong>3</strong>
-      <span>
-        Avalie a resposta do idoso.
-      </span>
-    </div>
+      <!-- Etapa 1 -->
+      <rect class="flow-box" x="290" y="20" width="320" height="80" rx="18"></rect>
+      <text class="flow-number" x="320" y="53">1</text>
+      <text class="flow-title" x="370" y="50">Observe</text>
+      <text class="flow-text" x="370" y="76">Identifique comportamento e risco</text>
 
-    <div>
-      <strong>4</strong>
-      <span>
-        Se houver melhora, mantenha presença acolhedora e ambiente seguro.
-      </span>
-    </div>
+      <line class="flow-line" x1="450" y1="105" x2="450" y2="145"></line>
 
-    <div>
-      <strong>5</strong>
-      <span>
-        Se não houver melhora ou houver agravamento, acione apoio.
-      </span>
-    </div>
+      <!-- Etapa 2 -->
+      <rect class="flow-box" x="290" y="150" width="320" height="88" rx="18"></rect>
+      <text class="flow-number" x="320" y="184">2</text>
+      <text class="flow-title" x="370" y="180">Abordagem verbal</text>
+      <text class="flow-text" x="370" y="206">Voz calma, frases curtas</text>
 
-    <div>
-      <strong>6</strong>
-      <span>
-        Registre a ocorrência e comunique familiares e equipe de saúde.
-      </span>
-    </div>
+      <line class="flow-line" x1="450" y1="243" x2="450" y2="285"></line>
+
+      <!-- Decisão -->
+      <polygon class="flow-decision" points="450,290 600,380 450,470 300,380"></polygon>
+      <text class="flow-title center" x="450" y="370">Respondeu?</text>
+      <text class="flow-text center" x="450" y="398">A agitação reduziu?</text>
+
+      <!-- Sim -->
+      <line class="flow-line" x1="300" y1="380" x2="170" y2="380"></line>
+      <text class="flow-label" x="220" y="365">SIM</text>
+
+      <rect class="flow-box success" x="30" y="335" width="240" height="90" rx="18"></rect>
+      <text class="flow-title center" x="150" y="368">Mantenha presença</text>
+      <text class="flow-text center" x="150" y="394">Escuta ativa e ambiente seguro</text>
+
+      <!-- Não -->
+      <line class="flow-line danger-line" x1="600" y1="380" x2="730" y2="380"></line>
+      <text class="flow-label danger-label" x="650" y="365">NÃO</text>
+
+      <rect class="flow-box danger-box" x="630" y="335" width="240" height="90" rx="18"></rect>
+      <text class="flow-title center" x="750" y="368">Acione apoio</text>
+      <text class="flow-text center" x="750" y="394">Enfermagem, família ou emergência</text>
+
+      <!-- Convergência -->
+      <line class="flow-line" x1="150" y1="430" x2="150" y2="570"></line>
+      <line class="flow-line danger-line" x1="750" y1="430" x2="750" y2="570"></line>
+      <line class="flow-line" x1="150" y1="570" x2="450" y2="570"></line>
+      <line class="flow-line danger-line" x1="750" y1="570" x2="450" y2="570"></line>
+      <line class="flow-line" x1="450" y1="570" x2="450" y2="610"></line>
+
+      <!-- Registro -->
+      <rect class="flow-box" x="270" y="615" width="360" height="92" rx="18"></rect>
+      <text class="flow-number" x="300" y="650">4</text>
+      <text class="flow-title" x="350" y="647">Registre tudo</text>
+      <text class="flow-text" x="350" y="674">Horário, sintomas e intervenções</text>
+    </svg>
   </div>
 
   <div class="example-box">
