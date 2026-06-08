@@ -29,6 +29,25 @@
       select.value = "";
     }
   });
+
+  function openPhoto(img) {
+    var modal = document.getElementById("photoModal");
+    var modalImage = document.getElementById("modalImage");
+
+    modalImage.src = img.src;
+    modal.className = "photo-modal is-open";
+  }
+
+  function closePhoto() {
+    var modal = document.getElementById("photoModal");
+    modal.className = "photo-modal";
+  }
+
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      closePhoto();
+    }
+  });
 </script>
 
 <body>
@@ -204,6 +223,26 @@
     <p><strong>Idoso:</strong> “Eu quero ir embora agora!”</p>
     <p><strong>Cuidador:</strong> “Entendo que o senhor está preocupado. Estou aqui com o senhor. Vamos respirar um pouco e conversar.”</p>
   </div>
+
+  <img
+    src="images/manejo-verbal-1.jpg"
+    alt="Exemplo de manejo verbal adequado"
+    class="guide-image"
+    onclick="openPhoto(this)"
+  >
+  <p class="image-caption">
+    Exemplo de comunicação adequada.
+  </p>
+
+  <img
+    src="images/manejo-verbal-2.jpg"
+    alt="Exemplo de manejo verbal inadequado"
+    class="guide-image"
+    onclick="openPhoto(this)"
+  >
+  <p class="image-caption">
+    Exemplo de comunicação inadequada.
+  </p>
 </section>
 
 <section class="section red" id="nao-verbal">
@@ -231,6 +270,16 @@
       </ul>
     </article>
 
+    <img
+      src="images/manejo-nao-verbal-1.jpg"
+      alt="Exemplo de manejo não verbal adequado"
+      class="guide-image"
+      onclick="openPhoto(this)"
+    >
+    <p class="image-caption">
+      Manejo não verbal: reduzir estímulos e evitar confronto.
+    </p>
+
     <article class="card danger">
       <h3>O que evitar</h3>
 
@@ -244,6 +293,16 @@
         <li>Ignorar sinais de escalada do comportamento</li>
       </ul>
     </article>
+
+    <img
+      src="images/manejo-nao-verbal-2.jpg"
+      alt="Exemplo de manejo não verbal inadequado"
+      class="guide-image"
+      onclick="openPhoto(this)"
+    >
+    <p class="image-caption">
+      Manejo não verbal: confrontação e aumento do risco de agressão.
+    </p>
   </div>
 
   <div class="example-box danger-example">
@@ -451,6 +510,16 @@
       dos serviços de saúde e da equipe multiprofissional.
   </div>
 
+  <img
+    src="images/limites-cuidado.jpg"
+    alt="Limites da atuação do cuidador em situações de risco"
+    class="guide-image"
+    onclick="openPhoto(this)"
+  >
+  <p class="image-caption">
+    Em situações de risco, o cuidador deve buscar apoio e evitar contenção sozinho.
+  </p>
+
   <div class="grid two">
     <article class="card">
       <h3>Quando procurar ajuda</h3>
@@ -509,6 +578,10 @@
     O cuidado humanizado salva vidas — cuide também de você.
   </p>
 </footer>
+
+<div id="photoModal" class="photo-modal" onclick="closePhoto()">
+  <img id="modalImage" class="modal-image" alt="Imagem ampliada">
+</div>
 
 </body>
 </html>

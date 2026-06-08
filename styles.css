@@ -435,6 +435,28 @@ footer a {
   color: white !important;
 }
 
+.guide-image {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 24px auto 8px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.guide-image:hover {
+  transform: scale(1.01);
+}
+
+.image-caption {
+  text-align: center;
+  color: #5d7067;
+  font-size: 0.95rem;
+  margin: 0 0 20px;
+}
+
 /*
 ==========
 FLUXOGRAMA
