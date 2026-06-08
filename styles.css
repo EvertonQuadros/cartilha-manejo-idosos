@@ -394,6 +394,11 @@ footer a {
   text-decoration: underline;
 }
 
+.nav-about {
+  background: var(--green-dark) !important;
+  color: white !important;
+}
+
 /*
 ==========
 QUEM SOMOS
