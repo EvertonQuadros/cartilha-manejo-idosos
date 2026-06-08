@@ -237,4 +237,23 @@ footer p {
   .mini-card {
     padding: 18px;
   }
+
+  .green,
+  .red,
+  .yellow,
+  .blue {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+.green,
+.red,
+.yellow,
+.blue {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: max(24px, calc((100vw - 1100px) / 2 + 24px));
+  padding-right: max(24px, calc((100vw - 1100px) / 2 + 24px));
 }
