@@ -357,3 +357,12 @@ font-weight: 600;
 .danger-example {
 border-left: 6px solid var(--danger-border);
 }
+
+.flow-intro {
+max-width: 800px;
+margin-bottom: 24px;
+}
+
+.steps span {
+flex: 1;
+}
