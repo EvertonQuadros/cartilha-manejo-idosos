@@ -241,6 +241,10 @@ footer p {
   margin: 6px 0;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media (max-width: 760px) {
   .grid.two,
   .grid.four,
@@ -429,10 +433,6 @@ footer a {
 .nav-about {
   background: var(--green-dark) !important;
   color: white !important;
-}
-
-.mobile-nav {
-  display: none;
 }
 
 /*
