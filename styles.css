@@ -298,3 +298,49 @@ footer p {
   background: var(--warning-bg);
   border-left-color: var(--warning-border);
 }
+
+.section-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: bold;
+  color: var(--green);
+  margin: 0 0 6px;
+}
+
+.crisis-card h3 {
+  color: var(--green-dark);
+  font-size: 1.45rem;
+}
+
+.info-block {
+  border-left: 4px solid var(--green);
+  padding-left: 12px;
+  margin-top: 18px;
+}
+
+.info-block h4 {
+  margin: 0 0 6px;
+  color: var(--green-dark);
+}
+
+.info-block p {
+  margin: 0;
+}
+
+.example-box {
+  background: #ffffff;
+  border-left: 6px solid var(--green);
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+
+.example-box h3 {
+  margin-top: 0;
+  color: var(--green-dark);
+}
+
+.example-box p {
+  margin: 8px 0;
+}
