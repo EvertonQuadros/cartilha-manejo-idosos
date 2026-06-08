@@ -366,3 +366,15 @@ margin-bottom: 24px;
 .steps span {
 flex: 1;
 }
+
+.risk-grid {
+  margin-top: 20px;
+}
+
+.risk-card h3 {
+  color: #6b4c00;
+}
+
+.risk-example {
+  border-left: 6px solid var(--warning-border);
+}
