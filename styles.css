@@ -378,3 +378,7 @@ flex: 1;
 .risk-example {
   border-left: 6px solid var(--warning-border);
 }
+
+.listening-example {
+  border-left: 6px solid #5d8db3;
+}
