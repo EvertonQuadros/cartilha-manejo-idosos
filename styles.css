@@ -344,3 +344,16 @@ footer p {
 .example-box p {
   margin: 8px 0;
 }
+
+.warning-banner {
+background: #fff4cf;
+border-left: 6px solid #e0ad1f;
+border-radius: 12px;
+padding: 16px;
+margin-bottom: 20px;
+font-weight: 600;
+}
+
+.danger-example {
+border-left: 6px solid var(--danger-border);
+}
