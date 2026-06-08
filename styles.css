@@ -382,3 +382,9 @@ flex: 1;
 .listening-example {
   border-left: 6px solid #5d8db3;
 }
+
+footer a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
