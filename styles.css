@@ -482,6 +482,7 @@ FLUXOGRAMA
 
 .danger-line {
   stroke: #c93d3d;
+  marker-end: url(#arrow-red);
 }
 
 .flow-number {
