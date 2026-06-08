@@ -257,3 +257,13 @@ footer p {
   padding-left: max(24px, calc((100vw - 1100px) / 2 + 24px));
   padding-right: max(24px, calc((100vw - 1100px) / 2 + 24px));
 }
+
+.strong-subtitle {
+  font-weight: bold;
+  color: #344b44;
+}
+
+.emergency {
+  background: #fff1f1;
+  border-left-color: #d96b6b;
+}
