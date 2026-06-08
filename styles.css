@@ -441,6 +441,17 @@ QUEM SOMOS
 ==========
 */
 
+.project-card h2 {
+  margin-bottom: 8px;
+}
+
+.project-subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--green-dark);
+  margin: 0 0 14px;
+}
+
 .team-photo {
   width: 100%;
   max-width: 900px;
