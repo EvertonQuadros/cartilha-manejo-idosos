@@ -31,10 +31,24 @@
   <a href="#risco">Risco</a>
   <a href="#escuta">Escuta</a>
   <a href="#apoio">Apoio</a>
+
+  <a href="sobre.html" class="nav-about">
+    Quem Somos
+  </a>
 </nav>
 
-<div class="nav-secondary">
-  <a href="sobre.html">👥 Quem Somos</a>
+<div class="mobile-nav">
+  <label for="mobileMenu">Ir para:</label>
+  <select id="mobileMenu" onchange="location.href=this.value">
+    <option value="sobre.html">👥 Quem Somos</option>
+    <option value="#crise">Crise</option>
+    <option value="#manejo">Manejo</option>
+    <option value="#nao-verbal">Segurança</option>
+    <option value="#fluxo">Fluxo</option>
+    <option value="#risco">Risco</option>
+    <option value="#escuta">Escuta</option>
+    <option value="#apoio">Apoio</option>
+  </select>
 </div>
 
 <main class="container">
