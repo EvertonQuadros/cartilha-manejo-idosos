@@ -6,6 +6,28 @@
   <title>Sobre o Projeto</title>
   <link rel="stylesheet" href="styles.css?v=2">
 </head>
+
+<div id="photoModal" class="photo-modal" onclick="closePhoto()">
+  <img id="modalImage" class="modal-image">
+</div>
+
+<script>
+    function openPhoto(img) {
+    document.getElementById("modalImage").src = img.src;
+    document.getElementById("photoModal").style.display = "flex";
+    }
+
+    function closePhoto() {
+    document.getElementById("photoModal").style.display = "none";
+    }
+
+    document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+        closePhoto();
+    }
+    });
+</script>
+
 <body>
 
 <header class="hero">
@@ -25,13 +47,11 @@
   <section class="section">
 
     <div class="card">
-
       <h2>Entre Palavras e Silêncios</h2>
-
-      <p>
-        O cuidado ao idoso com transtornos psiquiátricos.
-      </p>
-
+      <h3> cuidado ao idoso com transtornos psiquiátricos.</h3>
+        <p> 
+            <strong>Abordagem verbal, escuta ativa, reconhecimento de crises e encaminhamento responsável.</strong>
+        </p>
     </div>
 
   </section>
@@ -39,13 +59,18 @@
   <section class="section">
 
     <div class="card">
+        <h2>Foto da Turma</h2>
 
-      <h2>Foto da Turma</h2>
+        <img
+            src="images/quem_somos.jpg"
+            alt="Turma 9584"
+            class="team-photo"
+            onclick="openPhoto(this)"
+        >
 
-      <div class="photo-placeholder">
-        Foto da turma será adicionada aqui.
-      </div>
-
+        <p class="photo-caption">
+            Clique na imagem para ampliar.
+        </p>
     </div>
 
   </section>
@@ -64,9 +89,9 @@
 
         <p><strong>Turma:</strong> 9584</p>
 
-        <p><strong>Período:</strong> [preencher]</p>
+        <p><strong>Período:</strong> 24/02/26 - 09/06/26</p>
 
-        <p><strong>Professora:</strong> [preencher]</p>
+        <p><strong>Professora:</strong> Léia Gonchoroski Machado</p>
 
       </div>
 
@@ -75,8 +100,8 @@
         <h2>Integrantes</h2>
 
         <ul>
-          <li>Everton Quadros do Couto</li>
           <li>Clara Solange Pena</li>
+          <li>Everton Quadros do Couto</li>
         </ul>
 
       </div>
