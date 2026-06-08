@@ -431,7 +431,9 @@ footer a {
   color: white !important;
 }
 
-
+.mobile-nav {
+  display: none;
+}
 
 /*
 ==========

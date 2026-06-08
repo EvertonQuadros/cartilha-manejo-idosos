@@ -6,6 +6,31 @@
   <title>Entre Palavras e Silêncios</title>
   <link rel="stylesheet" href="styles.css?v=2" />
 </head>
+
+<script>
+  function goToMobileMenu(select) {
+    var value = select.value;
+
+    if (!value) {
+      return;
+    }
+
+    window.location.href = value;
+
+    setTimeout(function () {
+      select.value = "";
+    }, 100);
+  }
+
+  window.addEventListener("pageshow", function () {
+    var select = document.getElementById("mobileMenu");
+
+    if (select) {
+      select.value = "";
+    }
+  });
+</script>
+
 <body>
 
 <header class="hero" id="inicio">
@@ -39,14 +64,16 @@
 
 <div class="mobile-nav">
   <label for="mobileMenu">Ir para:</label>
-  <select id="mobileMenu" onchange="location.href=this.value">
+
+  <select id="mobileMenu" onchange="goToMobileMenu(this)">
+    <option value="">Selecione uma seção</option>
     <option value="sobre.html">👥 Quem Somos</option>
     <option value="#crise">Crise</option>
-    <option value="#manejo">Manejo</option>
+    <option value="#manejo">Manejo verbal</option>
     <option value="#nao-verbal">Segurança</option>
     <option value="#fluxo">Fluxo</option>
     <option value="#risco">Risco</option>
-    <option value="#escuta">Escuta</option>
+    <option value="#escuta">Escuta ativa</option>
     <option value="#apoio">Apoio</option>
   </select>
 </div>
