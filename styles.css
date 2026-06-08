@@ -310,6 +310,11 @@ footer p {
     gap: 12px;
   }
 
+  .image-single {
+    max-width: 700px;
+    margin: 30px auto;
+  }
+
 }
 
 .green,
