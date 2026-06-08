@@ -305,6 +305,11 @@ footer p {
     font-weight: bold;
   }
 
+  .image-pair {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
 }
 
 .green,
@@ -437,9 +442,7 @@ footer a {
 
 .guide-image {
   width: 100%;
-  max-width: 900px;
   display: block;
-  margin: 24px auto 8px;
   border-radius: 18px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.08);
   cursor: pointer;
@@ -455,6 +458,20 @@ footer a {
   color: #5d7067;
   font-size: 0.95rem;
   margin: 0 0 20px;
+}
+
+.image-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+.image-pair .guide-image {
+  width: 100%;
+  margin: 0;
 }
 
 /*
